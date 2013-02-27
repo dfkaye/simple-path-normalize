@@ -1,10 +1,6 @@
 ﻿{
   "version": "0.0.1",
   "name": "simple-path-normalize",
-  "author": {
-    "name": "david kaye",
-    "email" : "dfkaye@yahoo.com"
-  },
   "repository": {
     "type": "git",
     "url": "git://github.com/dfkaye/simple-path-normalize.git"
