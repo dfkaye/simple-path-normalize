@@ -1,0 +1,19 @@
+﻿{ 
+  "version": "0.0.1",
+  "name": "simple-path-normalize",
+  "description": "Accepts a pathname string with '.' and '..', returns directory normalized pathname",
+  "author": {
+    "name": "Andrea Giammarchi"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/dfkaye/simple-path-normalize.git"
+  },
+  "devDependencies": { 
+    "tape": "~0.0.4" }, 
+    "testling": { 
+      "files": "test/*.js", 
+      "browsers": [ "ie8", "ie9", "ff/13", "chrome/20" ] 
+    } 
+  }
+}

@@ -2,6 +2,7 @@
  * simple-path-normalize/src/path-normalize.js
  * david.kaye, @dfkaye
  * work in progress, as always :)
+ *
  */
  
 (function (exports) {
