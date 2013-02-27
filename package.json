@@ -3,7 +3,10 @@
   "name": "simple-path-normalize",
   "description": "Accept pathname string with dots, return normalized w/o dots",
   "homepage" : "https://github.com/dfkaye/simple-path-normalize",
-  "author": "david kaye <dfkaye@yahoo.com>",
+  "author": {
+    "david kaye",
+    "email" : "dfkaye@yahoo.com"
+  },
   "contributors": [ 
     {
       "name": "david kaye",
