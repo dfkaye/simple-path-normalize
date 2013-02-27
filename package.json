@@ -1,18 +1,10 @@
 ﻿{ 
   "version": "0.0.1",
   "name": "simple-path-normalize",
-  "description": "Accept pathname string with dots, return normalized w/o dots",
-  "homepage" : "https://github.com/dfkaye/simple-path-normalize",
   "author": {
     "name": "david kaye",
     "email" : "dfkaye@yahoo.com"
-  },
-  "contributors": [ 
-    {
-      "name": "david kaye",
-      "email": "dfkaye@yahoo.com"
-    } 
-  ],  
+  },  
   "repository": {
     "type": "git",
     "url": "git://github.com/dfkaye/simple-path-normalize.git"
