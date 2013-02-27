@@ -8,9 +8,10 @@ pathname. ___almost there___
 tape & testling
 ===============
 
-learning how to use tape + testling ___(still resolving package.json facepalms)___
+learning how to use tape + testling ___(done ~ after some package.json facepalms)___
 
-[![build status](https://secure.travis-ci.org/dfkaye/simple-path-normalize.png)](http://travis-ci.org/dfkaye/simple-path-normalize)
+[![browser support](http://ci.testling.com/dfkaye/simple-path-normalize.png)](http://ci.testling.com/dfkaye/simple-path-normalize)
+ 
 
 git & github
 ============
