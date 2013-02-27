@@ -5,7 +5,7 @@
  *
  */
  
-(function (exports) {
+;(function (exports) {
 
     var BLANK = '';
     var SLASH = '/';
