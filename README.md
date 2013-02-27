@@ -15,6 +15,13 @@ git & github
 
 re-learning how to use github correctly ___good enough___
 
+node
+====
+
+  cd ./simple-path-normalize
+  
+  node test/path-normalize-test.js
+  
 npm
 ============
 
