@@ -10,6 +10,8 @@ tape & testling
 
 learning how to use tape + testling ___(still resolving package.json facepalms)___
 
+[![build status](https://secure.travis-ci.org/dfkaye/simple-path-normalize.png)](http://travis-ci.org/dfkaye/simple-path-normalize)
+
 git & github
 ============
 
