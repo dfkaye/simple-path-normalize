@@ -4,7 +4,7 @@
   "description": "Accept pathname string with dots, return normalized w/o dots",
   "homepage" : "https://github.com/dfkaye/simple-path-normalize",
   "author": {
-    "david kaye",
+    "name": "david kaye",
     "email" : "dfkaye@yahoo.com"
   },
   "contributors": [ 
@@ -18,7 +18,7 @@
     "url": "git://github.com/dfkaye/simple-path-normalize.git"
   },
   "devDependencies": { 
-    "tape": "~0.0.4" 
+    "tape": "~0.3.2" 
   }, 
   "testling": { 
     "files": "test/*.js", 
