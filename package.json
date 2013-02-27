@@ -3,9 +3,13 @@
   "name": "simple-path-normalize",
   "description": "Accept pathname string with '.', '..' etc., return normalized",
   "homepage" : "https://github.com/dfkaye/simple-path-normalize",
-  "author": {
-    "name": "david kaye <dfkaye@yahoo.com>"
-  },
+  "author": "david kaye <dfkaye@yahoo.com>",
+  "contributors": [ 
+    {
+      "name": "david kaye",
+      "email": "dfkaye@yahoo.com"
+    } 
+  ],  
   "repository": {
     "type": "git",
     "url": "git://github.com/dfkaye/simple-path-normalize.git"
