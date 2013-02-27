@@ -2,6 +2,7 @@
   "version": "0.0.1",
   "name": "simple-path-normalize",
   "description": "Accept pathname string with '.', '..' etc., return normalized",
+  "homepage" : "https://github.com/dfkaye/simple-path-normalize",
   "author": {
     "name": "david kaye <dfkaye@yahoo.com>"
   },
