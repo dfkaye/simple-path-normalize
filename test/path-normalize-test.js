@@ -91,6 +91,11 @@ test('/top/./middle///bottom should return /top/middle/bottom', function (t) {
   t.equal(normalize('/top/./middle///bottom'), '/top/middle/bottom');
 });
 
+test('/top/middle/../womp/../bottom should return /top/bottom', function (t) {
+  t.plan(1);
+  t.equal(normalize('/top/middle/../womp/../bottom'), '/top/bottom');
+});
+
 /* template */
 /*
 test('$1 should return $2', function (t) {
