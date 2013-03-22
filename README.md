@@ -10,6 +10,9 @@ tape & testling
 
 learning how to use tape + testling ___(done ~ after some package.json facepalms)___
 
+[testling](https://ci.testling.com/dfkaye/simple-path-normalize) worked for a 
+while but has been broken lately (bad service hook setting)
+
 [![browser support](http://ci.testling.com/dfkaye/simple-path-normalize.png)](http://ci.testling.com/dfkaye/simple-path-normalize)
  
 
