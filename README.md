@@ -1,4 +1,4 @@
-﻿simple-path-normalize
+simple-path-normalize
 =====================
 
 JavaScript attempt at fixing/understanding pathname resolutions when given a 
