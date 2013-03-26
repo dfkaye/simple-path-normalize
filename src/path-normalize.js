@@ -38,4 +38,4 @@
         return target.join(SLASH).replace(/[\/]{2, }/g, SLASH) || SLASH;
     };
 
-}(this));
+}((typeof module != 'undefined' && module.exports) ? module.exports : this));
