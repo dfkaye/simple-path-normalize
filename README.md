@@ -8,21 +8,16 @@ pathname. ___almost there___
 tape & testling
 ===============
 
-learning how to use tape + testling ___(done ~ after some package.json facepalms)___
+Using [tape](https://github.com/substack/tape) to run tests from the node.js 
+command line, and in order to use [testling](http://ci.testling.com/) from the
+github service hook.
 
-[testling](https://ci.testling.com/dfkaye/simple-path-normalize) worked for a 
-while but has been broken lately (bad service hook setting)
+[![browser support](https://ci.testling.com/dfkaye/simple-path-normalize.png)](https://ci.testling.com/dfkaye/simple-path-normalize)
 
-[![browser support](http://ci.testling.com/dfkaye/simple-path-normalize.png)](http://ci.testling.com/dfkaye/simple-path-normalize)
- 
+[Things I've found about checking things in for testling to work](https://gist.github.com/dfkaye/5225546)
 
-git & github
-============
 
-re-learning how to use github correctly ___good enough___
-
-node
-====
+__from the command line__
 
     cd ./simple-path-normalize
   
