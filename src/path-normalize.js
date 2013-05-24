@@ -47,6 +47,8 @@
             }
         }
 
+        console.log(target);
+        
         return (scheme ? scheme + '://' : '') + target.join(SLASH).replace(/[\/]{2, }/g, SLASH) || SLASH;
     }
 
