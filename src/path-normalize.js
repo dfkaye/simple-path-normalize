@@ -47,9 +47,9 @@
             }
         }
 
-        console.log(target);
-        
-        return (scheme ? scheme + '://' : '') + target.join(SLASH).replace(/[\/]{2, }/g, SLASH) || SLASH;
+        var result = target.join(SLASH).replace(/[\/]{2, }/g, SLASH);
+        return result;
+        //return (scheme ? scheme + SCHEME : '') + target.join(SLASH).replace(/[\/]{2, }/g, SLASH) || SLASH;
     }
 
 }((typeof module != 'undefined' && module.exports) ? module.exports : this));
