@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src='../src/path-normalize.js'></script>
+    </head>
+    <body>
+        <p>
+            normalize test directly in browser - catch IE 6,7 vs. others
+        </p>
+        <p>
+            uncomment statements in page source as needed
+        </p>
+        <script>
+            //var test = normalize('/foo//bar/../baz////././../baz/spam');
+            //var test = normalize('plain/long');
+            var test = normalize('/top/../..//..//../../../bottom');
+            alert(test);
+        </script>
+    </body>
+</html>

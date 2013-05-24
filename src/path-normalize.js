@@ -21,8 +21,12 @@
         if (!path || path === SLASH) {
             return SLASH;
         }
-        
-        var target = path[0] === SLASH ? [SLASH] : path[0] === DOT ? [BLANK] : [];
+
+        /*
+           * for IE 6 & 7 - use path.charAt(i), not path[i]
+           */
+        var prependSlash = (path.charAt(0) == SLASH || path.charAt(0) == DOT);
+        var target = [];
         var src;
         var scheme;        
         var parts;
@@ -37,21 +41,22 @@
         }
 
         for (var i = 0; i < src.length; ++i) {
-            token = src[i] || BLANK;
+            token = src[i];
+            
             if (token === DOTS) {
-                if (target.length > 1) {
-                    target.pop();
-                }
-            } else if (token !== SLASH && token !== BLANK && token !== DOT) {
+                target.pop();
+            } else if (token !== BLANK && token !== DOT) {
                 target.push(token);
-            } else {
-                target.push(); // ie6, ie7??
             }
         }
 
-        var result = target.join(SLASH);
-        result = result.replace(/\/\//g, SLASH);
-        return (scheme ? scheme + SCHEME : '') + (result || SLASH);
+        var result = target.join(SLASH).replace(/[\/]{2,}/g, SLASH)
+        
+        if (prependSlash) {
+            result = SLASH + result;
+        }
+        
+        return (scheme ? scheme + SCHEME : '') + result;
     }
 
 }((typeof module != 'undefined' && module.exports) ? module.exports : this));
