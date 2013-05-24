@@ -1,6 +1,19 @@
 var test = require('tape');
 var normalize = require('../src/path-normalize.js').normalize;
 
+test('find normalize', function(t) {
+  t.ok(typeof normalize == 'function', 'sanity check')
+  t.end()
+});
+
+test('url with scheme', function(t) {
+  var src = 'http://domain.com/directory//should-disappear/.././filename.ext';
+  var target = 'http://domain.com/directory/filename.ext';
+  
+  t.equal(normalize(src), target, 'url with scheme');
+  t.end();
+});
+
 test('empty should return /', function (t) {
 
   t.equal(normalize(''), '/');

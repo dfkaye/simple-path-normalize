@@ -17,19 +17,23 @@
       "email": "raynos2@gmail.com"
     }
   ],
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/dfkaye/simple-path-normalize.git"
-  },
+
   "devDependencies": {
     "tape": "~0.2.2"
   },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/dfkaye/simple-path-normalize.git"
+  },  
+  "scripts": {
+    "test": "node ./test/suite.js"
+  },  
   "testling": {
     "files": "test/**/*.js",
     "browsers" : [
         "ie/6..latest",
-        "chrome/20..latest",
-        "firefox/10..latest",
+        "chrome/16..latest",
+        "firefox/3.5..latest",
         "safari/latest",
         "opera/11.0..latest",
         "iphone/6", "ipad/6"

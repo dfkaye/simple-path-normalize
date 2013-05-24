@@ -3,7 +3,9 @@ simple-path-normalize
 
 JavaScript attempt at fixing/understanding pathname resolutions when given a 
 pathname string containing '.' and '..' ~ should return normalized directory 
-pathname. ___almost there___
+pathname. 
+
+If path has a uri scheme, this should be preserved.
 
 tape & testling
 ===============
@@ -21,7 +23,9 @@ __from the command line__
 
     cd ./simple-path-normalize
   
-    node test/path-normalize-test.js
+    npm test
+    or
+    node test/suite.js
   
 npm
 ============
