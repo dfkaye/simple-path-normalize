@@ -3,9 +3,7 @@ simple-path-normalize
 
 JavaScript attempt at fixing/understanding pathname resolutions when given a 
 pathname string containing '.' and '..' ~ should return normalized directory 
-pathname. 
-
-If path has a uri scheme, this should be preserved.
+pathname.  If path has a URI scheme, this should be preserved.
 
 tape & testling
 ===============

@@ -33,14 +33,17 @@
         var token;
         
         if (path.indexOf(SCHEME) > 0) {
+        
             parts = path.split(SCHEME);
             scheme = parts[0];
             src = parts[1].split(SLASH);
         } else {
+        
             src = path.split(SLASH);
         }
 
         for (var i = 0; i < src.length; ++i) {
+        
             token = src[i];
             
             if (token === DOTS) {
@@ -50,13 +53,9 @@
             }
         }
 
-        var result = target.join(SLASH).replace(/[\/]{2,}/g, SLASH)
-        
-        if (prependSlash) {
-            result = SLASH + result;
-        }
-        
-        return (scheme ? scheme + SCHEME : '') + result;
+        var result = target.join(SLASH).replace(/[\/]{2,}/g, SLASH);
+              
+        return (scheme ? scheme + SCHEME : '') + (prependSlash ? SLASH : BLANK) + result;
     }
 
 }((typeof module != 'undefined' && module.exports) ? module.exports : this));
