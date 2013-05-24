@@ -22,7 +22,7 @@
             return SLASH;
         }
         
-        var target = (path[0] === SLASH || path[0] === DOT) ? [BLANK] : [];
+        var target = path[0] === SLASH ? [SLASH] : path[0] === DOT ? [BLANK] : [];
         var src;
         var scheme;        
         var parts;
@@ -42,15 +42,15 @@
                 if (target.length > 1) {
                     target.pop();
                 }
-            } else if (token !== BLANK && token !== DOT) {
+            } else if (token !== SLASH && token !== BLANK && token !== DOT) {
                 target.push(token);
+            } else {
+                target.push(); // ie6, ie7??
             }
         }
 
         var result = target.join(SLASH);
-        
-        result = result.replace(/[\/]{2, }/g, SLASH);
-
+        result = result.replace(/\/\//g, SLASH);
         return (scheme ? scheme + SCHEME : '') + (result || SLASH);
     }
 
